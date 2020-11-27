@@ -1,0 +1,16 @@
+<div class="container mt-3">
+    <div class="row">
+      <div class="col-8">
+        <div class="d-inline-flex align-items-center">
+        <h1><%= @article.title %></h1>
+        <%= link_to content_tag(:i, nil, class: 'fa fa-edit fa-2x pl-3'), edit_article_path %>
+        <%= link_to content_tag(:i, nil, class: 'fa fa-trash fa-2x pl-3'),
+           article_path(@article),
+           method: :delete,
+           data: { confirm: 'Are you sure?' } %>
+        </div>
+        <HR></HR>
+        <p> <%= @article.content %></p>
+      </div>
+    </div>
+</div>

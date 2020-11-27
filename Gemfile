@@ -49,3 +49,12 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Add Faker GEM
+gem 'faker'
+
+# Add Simple Form GEM
+gem 'simple_form'
+
+# Add Font Awesome
+gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
